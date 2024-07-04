@@ -1,0 +1,319 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f83cc;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* This line aligns buttons to the right */
+  border-color: #00ff00;
+}
+
+
+.weather-app {
+    background: #4f83cc;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    border: #00ff00;
+}
+
+.weather-app h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.weather-app input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.weather-app p {
+    color: white;
+    margin: 10px 0;
+}
+
+.location {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: #000;
+    border-radius: 5px;
+    background-color: #3b82f6;
+    color: white;
+    box-shadow: changeButton(color);
+    margin-right: 20px;
+}
+
+.weather h1{
+  color : white;
+}
+.weather h2{
+  color : white; 
+}
+.search{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer ;
+
+}
+
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+  margin-top: 50px;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img{
+  width: 40px;
+  align-items:center ;
+}
+
+.humidity, .wind{
+  font-size: 18px;
+  margin-top: -6px;
+  color: white;
+}
+
+.col p{
+  font-size: 15px;
+  margin-top: -3px;
+  color: white;
+
+}
+
+.backBtn{
+  position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #4f83cc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.weather{
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* This line aligns buttons to the right */
+  border-color: #00ff00;
+  background: #4f83cc;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  border: #00ff00;
+
+}
+
+.search img{
+  width: 16px;
+}
+
+.weather-app,.search{
+  justify-content: space-between;
+}
+.color-palette {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  padding: 8px;
+  text-align: center;
+}
+
+
+
+
+.round-button-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    box-shadow: red;
+    
+
+  }
+  
+.round-button-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color: #0000ff;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    box-shadow: blue;
+  }
+      
+.round-button-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color:#00ff00;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    box-shadow: #00ff00;
+  }
+      
+.round-button-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color:#786;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    box-shadow: #786;
+  }
+      
+.round-button-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color:#567;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    box-shadow: #567;
+  }
+      
+.round-button-6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color:#000;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    box-shadow: #000;
+  }
+
+
+  .color-palette {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 12px;
+    right: 0;
+    top: 150px; /* Adjust this value to move the palette up */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 31px;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  .color-palette .theme-color {
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .color-palette .theme-color:not(:last-child) {
+    margin-bottom: 10px;
+  }
+      
+  
+  .Default-Theme {
+    background: #4f83cc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    padding: 20px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+  }
+
+.weather{
+  display: none;
+}
